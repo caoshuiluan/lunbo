@@ -1,16 +1,16 @@
 <template>
-    <md-card>
-      <md-card-actions>
-        <div class="md-subhead">
+    <div>
+      <!-- <div>
+        <!-- <div class="md-subhead">
          
-        </div>
+        </div> -->
         <!-- <md-button class="md-icon-button"
                    target="_blank"
                    href="https://github.com/surmon-china/vue-awesome-swiper/blob/master/examples/21-infinite-loop-with-slides-per-group.vue">
           <md-icon>code</md-icon> -->
         <!-- </md-button> -->
-      </md-card-actions>
-      <md-card-media>
+      <!-- </div> -->
+      <div>
         <!-- swiper -->
         <swiper :options="swiperOption">
           <swiper-slide><img src="../assets/11.png" alt=""></swiper-slide>
@@ -23,18 +23,17 @@
           <div class="swiper-button-prev" slot="button-prev"></div>
           <div class="swiper-button-next" slot="button-next"></div>
         </swiper>
-      </md-card-media>
-    </md-card>
+      </div>
+    </div>
   </template>
-  
   <script>
   import { swiper,swiperSlide} from 'vue-awesome-swiper'
     export default {
       data() {
         return {
           swiperOption: {
-            slidesPerView: 4,
-            spaceBetween: 30,
+            slidesPerView: 3,
+            spaceBetween: 10,
             slidesPerGroup: 3,
             loop: true,
             loopFillGroupWithBlank: true,
