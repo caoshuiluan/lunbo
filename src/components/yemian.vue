@@ -1,7 +1,7 @@
 <template>
     <div>
       <!-- <div>
-        <!-- <div class="md-subhead">
+         <div class="md-subhead">
          
         </div> -->
         <!-- <md-button class="md-icon-button"
@@ -13,11 +13,11 @@
       <div>
         <!-- swiper -->
         <swiper :options="swiperOption">
-          <swiper-slide><img src="../assets/11.png" alt=""></swiper-slide>
-          <swiper-slide><img src="../assets/22.png" alt=""></swiper-slide>
-          <swiper-slide><img src="../assets/222222.png" alt=""></swiper-slide>
-          <swiper-slide><img src="../assets/33.png" alt=""></swiper-slide>
-          <swiper-slide><img src="../assets/logo.png" alt=""></swiper-slide>
+          <!-- <swiper-slide><img src="../assets/11.png" alt=""></swiper-slide>
+          <swiper-slide><img src="../assets/22.png" alt=""></swiper-slide> -->
+          <!-- <swiper-slide><img src="../assets/222222.png" alt=""></swiper-slide> -->
+          <!-- <swiper-slide><img src="../assets/33.png" alt=""></swiper-slide> -->
+          <!-- <swiper-slide><img src="../assets/logo.png" alt=""></swiper-slide> -->
           
           <div class="swiper-pagination" slot="pagination"></div>
           <div class="swiper-button-prev" slot="button-prev"></div>
