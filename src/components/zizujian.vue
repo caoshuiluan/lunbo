@@ -1,12 +1,12 @@
 <template>
   <div id="container">
     <swiper :options="swiperOption" ref="mySwiper">
-
       <swiper-slide v-for="item in swipes" :key="item.name" :name="name">
-        <img :src="item.url" >
+        <img :src="item.url" style="width:40px;
+        height:30px" />
       </swiper-slide>
-  <p class="swiper-pagination" slot="pagination"></p>
-  </swiper>
+      <p class="swiper-pagination" slot="pagination"></p>
+    </swiper>
   </div>
 </template>
 <script>
@@ -16,24 +16,37 @@
     props:["swipes"],
     data () {
       return {
-        swipes:[
-          {
+        swipes:[{
+          ulList:{
+            name:"1",
+            liList1:[
+              {
+               
               name:1,
               url:required("../assit/image/11.jpg")
-        },
-        {
+                },
+               {
               name:2,
               url:required("../assit/image/22.jpg")
-        },
-        {
+               },
+                {
               name:3,
               url:required("../assit/image/44.jpg")
-        },
-        {
+                },
+                {
               name:4,
               url:required("../assit/image/233.jpg")
-        }
-        ],
+                },
+                {
+              name:4,
+              url:required("../assit/image/233.jpg")
+               },
+                {
+              name:4,
+              url:required("../assit/image/233.jpg")
+                }
+         
+                ],
         swiperOption: {
           autoplay : {
             disableOnInteraction: false, //用户操作后是否禁止自动循环
@@ -59,17 +72,6 @@
             return this.$refs.mySwiper.swiper
           }
         }
-      }
-    }
-  }
+          }}]}}}
+      
 </script>
-<style scoped>
-  .swiper-slide{
-    width:100%;
-    height:150px;
-  }
-  img {
-    width: 100%;
-    height: auto;
-  }
-</style>
